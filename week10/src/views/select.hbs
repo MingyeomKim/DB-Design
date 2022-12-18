@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+<table>
+<tr>
+<td>Student_Id</td>
+<td>Name</td>
+<td>Email</td>
+<td>Phone_number</td>
+<td>Major</td>
+</tr>
+{{#each student}}
+<tr>
+<td>{{Student_id}}</td>
+<td>{{Name}}</td>
+<td>{{Email}}</td>
+<td>{{Phone_number}}</td>
+<td>{{Major}}</td>
+</tr>
+{{/each}}
+</table>
+
+<button type="button" onclick="location.href='/delete'">수강취소하러 가기</button>
